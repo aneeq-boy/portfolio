@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Aneeq Ahmed — Full-Stack Developer</title>
+  <meta name="description" content="Portfolio of Aneeq Ahmed, a full-stack developer building fast, accessible web products." />
+
+  <link rel="stylesheet" href="style.css" />
+
+  <!-- Apply the saved theme before first paint so there is no flash. -->
+  <script>
+    (function () {
+      try {
+        var saved = localStorage.getItem("theme");
+        if (saved === "light" || saved === "dark") {
+          document.documentElement.setAttribute("data-theme", saved);
+        }
+      } catch (e) {}
+    })();
+  </script>
+</head>
+<body>
+
+  <!-- ===== Navigation ===== -->
+  <header>
+    <div class="wrap nav">
+      <a href="#top" class="brand">
+        <span class="mark">A</span>
+        Aneeq Ahmed
+      </a>
+      <nav class="nav-links">
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#work">Work</a>
+        <a href="#experience">Experience</a>
+        <button id="theme-toggle" class="theme-toggle" type="button" aria-label="Toggle light and dark theme">
+          <i data-lucide="moon"></i>
+        </button>
+        <a href="#contact" class="nav-cta"><i data-lucide="mail"></i> Get in touch</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="top">
+
+    <!-- ===== Hero ===== -->
+    <section class="hero wrap" style="padding-top: 0;">
+      <div class="reveal">
+        <h1>Full-stack developer building <span class="accent">fast, honest</span> web products.</h1>
+        <p class="lead">I am Aneeq, a software engineer who turns rough ideas into shipped products. I care about clean architecture, accessible interfaces, and code that the next person can actually read.</p>
+        <div class="hero-actions">
+          <a href="#work" class="btn btn-primary">View my work <i data-lucide="arrow-right"></i></a>
+          <a href="#contact" class="btn btn-ghost"><i data-lucide="mail"></i> Get in touch</a>
+        </div>
+      </div>
+      <div class="hero-portrait reveal">
+        <div class="photo">
+          <img id="profile-photo" src="alias.jpg" alt="Portrait of Aneeq Ahmed" loading="eager" />
+        </div>
+        <div class="badge">
+          <strong>6+ yrs</strong>
+          <span>shipping production software</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== About ===== -->
+    <section id="about" class="wrap">
+      <div class="section-head reveal">
+        <h2>About me</h2>
+        <p>A short version of the story behind the code.</p>
+      </div>
+      <div class="about">
+        <div class="about-body reveal">
+          <p>I started writing software because I liked taking things apart and understanding why they worked. That curiosity turned into a career building products end to end, from database schema to the pixels a user actually touches.</p>
+          <p>Today I work mostly across <strong>TypeScript, React, and Node</strong>, with a soft spot for the parts nobody sees: caching layers, migrations, and the quiet reliability work that keeps a product from falling over at 2am.</p>
+          <p>When I am away from the keyboard you will find me bouldering, roasting coffee badly, and reading far too many postmortems for fun.</p>
+        </div>
+        <div class="stats reveal">
+          <div class="stat"><strong>40+</strong><span>projects delivered</span></div>
+          <div class="stat"><strong>6</strong><span>years experience</span></div>
+          <div class="stat"><strong>12</strong><span>open-source repos</span></div>
+          <div class="stat"><strong>99.9%</strong><span>uptime on flagship app</span></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== Skills ===== -->
+    <section id="skills" class="wrap">
+      <div class="section-head reveal">
+        <h2>What I work with</h2>
+        <p>The tools I reach for, grouped by where they live in the stack.</p>
+      </div>
+      <div class="skills-grid">
+        <div class="skill-card reveal">
+          <span class="skill-icon"><i data-lucide="layout-dashboard"></i></span>
+          <h3>Frontend</h3>
+          <div class="role">Interfaces people enjoy using</div>
+          <div class="chips">
+            <span class="chip">React</span>
+            <span class="chip">Next.js</span>
+            <span class="chip">TypeScript</span>
+            <span class="chip">Tailwind</span>
+            <span class="chip">Framer Motion</span>
+          </div>
+        </div>
+        <div class="skill-card reveal">
+          <span class="skill-icon"><i data-lucide="server"></i></span>
+          <h3>Backend</h3>
+          <div class="role">APIs and data that hold up</div>
+          <div class="chips">
+            <span class="chip">Node.js</span>
+            <span class="chip">PostgreSQL</span>
+            <span class="chip">Redis</span>
+            <span class="chip">GraphQL</span>
+            <span class="chip">Prisma</span>
+          </div>
+        </div>
+        <div class="skill-card reveal">
+          <span class="skill-icon"><i data-lucide="cloud"></i></span>
+          <h3>Platform</h3>
+          <div class="role">Getting it live and keeping it there</div>
+          <div class="chips">
+            <span class="chip">Docker</span>
+            <span class="chip">AWS</span>
+            <span class="chip">GitHub Actions</span>
+            <span class="chip">Terraform</span>
+            <span class="chip">Grafana</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== Work ===== -->
+    <section id="work">
+      <div class="wrap">
+        <div class="section-head reveal">
+          <h2>Selected work</h2>
+          <p>A few projects that show how I think about product, code, and the space between them.</p>
+        </div>
+        <div class="projects">
+
+          <article class="project reveal">
+            <div class="project-media">
+              <img src="https://picsum.photos/seed/lumen-analytics/800/600" alt="Lumen analytics dashboard interface" loading="lazy" />
+            </div>
+            <div class="project-body">
+              <div class="kind">Product, 2025</div>
+              <h3>Lumen</h3>
+              <p>A real-time analytics dashboard for small SaaS teams. I designed the query pipeline and built a charting layer that stays smooth even at a million events per day.</p>
+              <div class="project-tags">
+                <span class="chip">Next.js</span>
+                <span class="chip">ClickHouse</span>
+                <span class="chip">WebSockets</span>
+              </div>
+              <a href="#" class="project-link">Read the case study <i data-lucide="arrow-up-right"></i></a>
+            </div>
+          </article>
+
+          <article class="project reveal">
+            <div class="project-media">
+              <img src="https://picsum.photos/seed/postmark-cli/800/600" alt="Terminal running the Postmark developer tool" loading="lazy" />
+            </div>
+            <div class="project-body">
+              <div class="kind">Open source, 2024</div>
+              <h3>Postmark CLI</h3>
+              <p>A command-line tool that turns Markdown notes into a searchable static site. Grew to 2,300 stars and a small but lovely contributor community.</p>
+              <div class="project-tags">
+                <span class="chip">Rust</span>
+                <span class="chip">CLI</span>
+                <span class="chip">Static gen</span>
+              </div>
+              <a href="#" class="project-link">View on GitHub <i data-lucide="github"></i></a>
+            </div>
+          </article>
+
+          <article class="project reveal">
+            <div class="project-media">
+              <img src="https://picsum.photos/seed/trailhead-hiking/800/600" alt="Trailhead mobile hiking app screens" loading="lazy" />
+            </div>
+            <div class="project-body">
+              <div class="kind">Client work, 2023</div>
+              <h3>Trailhead</h3>
+              <p>An offline-first hiking companion with live GPS tracks. I owned the sync engine that reconciles routes recorded with no signal against the server once you are back in range.</p>
+              <div class="project-tags">
+                <span class="chip">React Native</span>
+                <span class="chip">SQLite</span>
+                <span class="chip">Mapbox</span>
+              </div>
+              <a href="#" class="project-link">See the project <i data-lucide="arrow-up-right"></i></a>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== Experience ===== -->
+    <section id="experience" class="wrap">
+      <div class="section-head reveal">
+        <h2>Experience</h2>
+        <p>Where I have spent my time and what I was responsible for.</p>
+      </div>
+      <div class="timeline">
+        <div class="job reveal">
+          <div class="when">2023 - Present</div>
+          <div>
+            <h3>Senior Software Engineer</h3>
+            <div class="company">Northwind Labs</div>
+            <p>Lead the platform team building the data ingestion service behind our analytics product. Cut median query latency by 60% and mentored three junior engineers through their first year.</p>
+          </div>
+        </div>
+        <div class="job reveal">
+          <div class="when">2021 - 2023</div>
+          <div>
+            <h3>Full-Stack Developer</h3>
+            <div class="company">Foundry &amp; Co.</div>
+            <p>Shipped client web apps across fintech and health. Introduced the team to end-to-end testing and a shared component library that halved new-feature build time.</p>
+          </div>
+        </div>
+        <div class="job reveal">
+          <div class="when">2019 - 2021</div>
+          <div>
+            <h3>Junior Developer</h3>
+            <div class="company">Bright Pixel Studio</div>
+            <p>Built marketing sites and internal tools, learned the difference between code that works and code that lasts, and fell for the backend along the way.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== Contact ===== -->
+    <section id="contact">
+      <div class="wrap">
+        <div class="contact-card reveal">
+          <h2>Let us build something</h2>
+          <p>Have a product in mind, or a team that needs an extra pair of hands? I would love to hear about it.</p>
+          <div class="contact-actions">
+            <a href="mailto:hello@aneeq.dev" class="btn btn-primary"><i data-lucide="mail"></i> hello@aneeq.dev</a>
+            <a href="#" class="btn btn-ghost"><i data-lucide="download"></i> Download resume</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ===== Footer ===== -->
+  <footer>
+    <div class="wrap foot">
+      <div class="copy">&copy; 2026 Aneeq Ahmed. Built from scratch.</div>
+      <div class="socials">
+        <a href="#" aria-label="GitHub"><i data-lucide="github"></i> GitHub</a>
+        <a href="https://www.linkedin.com/in/m-aneeq-ahmad-shahid-920a6b343" target="_blank" rel="noopener" aria-label="LinkedIn"><i data-lucide="linkedin"></i> LinkedIn</a>
+        <a href="#" aria-label="Twitter"><i data-lucide="twitter"></i> Twitter</a>
+        <a href="mailto:hello@aneeq.dev" aria-label="Email"><i data-lucide="mail"></i> Email</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Lucide icons (CDN). Loads before our script so createIcons() can run. -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <script src="script.js"></script>
+
+</body>
+</html>
